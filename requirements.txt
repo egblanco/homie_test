@@ -1,0 +1,8 @@
+Django==1.11
+psycopg2
+django-adminlte2
+django-chartjs
+weasyprint
+reportlab
+requests
+psycopg2-binary

@@ -1,0 +1,29 @@
+{% extends 'adminlte/lib/_main_sidebar.html' %}
+
+
+{% block nav_heading %}Movies{% endblock %}
+
+{% block user_panel %}
+        <div class="user-panel">
+            <div class="pull-left image">
+{#                <img src="{% avatar_url size=90 %}" class="img-circle" alt="User Image">#}
+            </div>
+            <div class="pull-left info">
+{#                <p>{% firstof request.user.get_full_name request.user.username %}</p>#}
+            </div>
+        </div>
+        {% endblock %}
+
+{% block nav_links %}
+
+        <li class="treeview">
+            <a href="{% url 'manage_app:rent_a_movie' %}">
+                <span class=""><i class="fa fa-file-text"></i> Rent a Movie </span>
+            </a>
+        </li>
+        <li class="treeview">
+            <a href="{% url 'manage_app:movies' %}">
+                <span class=""><i class="fa  fa-file-video-o"></i> Movies Management</span>
+            </a>
+        </li>
+{% endblock %}
